@@ -1,1 +1,50 @@
 // TODO
+.mainContent {
+    max-width: 720px;
+    margin: 3rem auto;
+    color: var(--heading);
+
+    .postCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-bottom: 3rem;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.85);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            line-height: 2.215rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+            text-align: justify;
+        }
+
+        .footer {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+
+            .date,
+            .author {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+    }
+
+    .loadMore {
+        background: none;
+        border: none;
+        margin-top: 1rem;
+
+        color: var(--highlight);
+    }
+}
